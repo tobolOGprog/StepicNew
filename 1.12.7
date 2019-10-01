@@ -1,0 +1,7 @@
+a=list(map(int, input()))
+if len(a) % 2 == 1:
+    print("Обычный")
+elif sum(a[:len(a)//2])==sum(a[len(a)//2:]):
+    print("Счастливый")
+else:
+    print("Обычный")
